@@ -12,9 +12,11 @@ Rio de Janeiro — Outubro de 2026
 
 **App online:** https://aguimim.github.io/faculfood-EntregaFinal/
 
-**Vídeo de apresentação (2 min):** [`FaculFood-video-v3-2min.mp4`](FaculFood-video-v3-2min.mp4)
+**Vídeo de apresentação (2 min):** https://youtu.be/f7J-SdJABGg (cópia do arquivo no repositório: [`FaculFood-video-v3-2min.mp4`](FaculFood-video-v3-2min.mp4))
 
 **Relatório em PDF:** [`docs/Relatorio-FaculFood.pdf`](docs/Relatorio-FaculFood.pdf)
+
+**Documentos da entrega:** [Roteiro](docs/ROTEIRO.md) · [AI Log](docs/AI-LOG.md) · [Relatório Final](docs/RELATORIO-FINAL.md) (também reproduzidos nas seções 1, 2 e 3 abaixo)
 
 ### Contas de demonstração
 
