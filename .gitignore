@@ -1,0 +1,11 @@
+# SO / editores
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+.idea/
+.vscode/
+.claude/
+_vidframes/
+FaculFood-video-final-2min.mp4
+FaculFood-video-v2-2min.mp4
