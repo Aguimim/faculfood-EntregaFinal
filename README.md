@@ -8,6 +8,59 @@ Pontifícia Universidade Católica do Rio de Janeiro<br>
 Rio de Janeiro — Outubro de 2026
 </p>
 
+## Acesso rápido
+
+**App online:** https://aguimim.github.io/faculfood-EntregaFinal/
+
+**Vídeo de apresentação (2 min):** [`FaculFood-video-v3-2min.mp4`](FaculFood-video-v3-2min.mp4)
+
+**Relatório em PDF:** [`docs/Relatorio-FaculFood.pdf`](docs/Relatorio-FaculFood.pdf)
+
+### Contas de demonstração
+
+A base de demonstração é criada automaticamente no primeiro acesso, então dá para testar os três perfis sem cadastro:
+
+| Perfil | E-mail | Senha |
+|---|---|---|
+| Cliente | demo@puc-rio.br | demo1234 |
+| Restaurante (Cardeal Cafés & Lanches) | cardeallanches@gmail.com | cardeallanches123 |
+| Gestor PUC-Rio | gestor@puc-rio.br | gestor2026 |
+
+Fluxo sugerido para avaliar: entre como cliente, faça um pedido, saia, entre como o restaurante do pedido e avance o status no kanban, depois entre como gestor para ver os indicadores. Como os dados ficam no armazenamento local do navegador, os três perfis precisam ser testados no mesmo navegador.
+
+## Como reproduzir do zero
+
+O FaculFood é um site estático (HTML, CSS e JavaScript em um único `index.html`), sem build, sem dependências para instalar e sem servidor próprio.
+
+**Opção 1: publicar a sua própria cópia online (GitHub Pages)**
+
+1. Faça um fork deste repositório (botão "Fork" no topo da página).
+2. No seu fork, vá em **Settings > Pages**.
+3. Em "Build and deployment", escolha **Deploy from a branch**, branch **main**, pasta **/ (root)**, e clique em **Save**.
+4. Em um ou dois minutos o app fica disponível em `https://SEU-USUARIO.github.io/faculfood-EntregaFinal/`.
+
+**Opção 2: rodar localmente**
+
+```bash
+git clone https://github.com/Aguimim/faculfood-EntregaFinal.git
+cd faculfood-EntregaFinal
+python -m http.server 8000
+```
+
+Depois abra `http://localhost:8000` no navegador. Usar um servidor local (em vez de abrir o arquivo com duplo clique) é necessário para o service worker e a instalação como PWA funcionarem.
+
+**Recursos opcionais com IA.** O assistente de gosto e a leitura de cardápio por imagem funcionam sem configuração, com lógica local e OCR (Tesseract.js). Para usar o Claude nessas funções, cole sua própria chave da API da Anthropic no Perfil (cliente) ou em Loja (restaurante). A chave fica salva apenas no navegador de quem a inseriu e nunca é enviada ao repositório.
+
+**Estrutura do repositório**
+
+| Caminho | Conteúdo |
+|---|---|
+| `index.html` | Aplicação completa (interface, lógica e base de demonstração) |
+| `data/cardapios.json` | Cardápios estruturados (5 restaurantes reais do campus + afiliados fictícios marcados como exemplo) |
+| `manifest.json`, `sw.js`, `assets/` | Configuração de PWA, cache offline e ícones |
+| `docs/` | Relatório, AI Log, roteiros, jornada do app e avaliação com usuários |
+| `apresentacoes/` | Slides do pitch e da sprint |
+
 ---
 
 ## Sumário
